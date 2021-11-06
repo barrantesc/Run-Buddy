@@ -5,12 +5,12 @@
 }
 
 body {
-    /* more of this crazy alphanumerical value in a minute! */
     color: #39a6b2;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 /* apply styles to <header>*/
+
 header {
     padding: 20px 35px;
     background-color: #39a6b2;
@@ -48,7 +48,9 @@ header nav ul li a {
     font-weight: lighter;
     font-size: 1.55vw;
 }
+/* Header Ends*/
 
+/*Footer Style*/
 footer {
     background: #fce138;
     width: 100%;
@@ -72,6 +74,9 @@ footer div {
 footer a {
     color: #024e76
 }
+/*Footer End*/
+
+/* Style all sections tag*/
 
 section {
     padding: 60px;
@@ -113,22 +118,12 @@ section {
 }
 
 .hero-form h3 {
-    margin: 0px;
+    margin: 0;
     font-size: 24px;
 }
 
 .hero-form p {
     margin: 5px 0 15px 0;
-}
-
-.float-left {
-    float: left;
-    margin-right: 25px;
-}
-
-.float-right {
-    float: right;
-    margin-left: 25px;
 }
 
 .form-input {
@@ -155,23 +150,7 @@ section {
 
 /* Hero Style End */
 
-/* What We Do Start */
-
-.intro p {
-    line-height: 1.7;
-    color: #39a6b2;
-    width: 80%;
-    font-size: 20px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-/* What You Do Start */
-
-.steps {
-    background-color: #fce138;
-
-}
+/*Title Section Style Start*/
 
 .section-title {
     font-size: 55px;
@@ -191,6 +170,26 @@ section {
     border-color: #39a6b2;
 }
 
+/*Title Section Style End*/
+
+/* What We Do Start */
+
+.intro p {
+    line-height: 1.7;
+    color: #39a6b2;
+    width: 80%;
+    font-size: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+/*What We Do End*/
+
+/* What You Do Start */
+
+.steps {
+    background-color: #fce138;
+}
+
 .step {
     margin: 50px auto;
     padding-bottom: 50px;
@@ -202,7 +201,7 @@ section {
     justify-content: space-between;
 }
 
-.steps h3 {
+.step h3 {
     color: #024e76;
     font-size: 46px;
     flex: 1 30%;
@@ -228,18 +227,19 @@ section {
     flex: 12;;
 }
 
-.step-text h4 {
-    font-size: 26px;
-    line-height: 1.5;
-    color: #024e76;
-}
-
 .step-text p {
     color:#39a6b2;
     font-size: 18px;
 }
 
-/* trainers Style*/
+.step-text h4 {
+    font-size: 26px;
+    line-height: 1.5;
+    color: #024e76;
+}
+/* What You Do  End*/
+
+/* trainers Style Start*/
 
 .trainers {
    width: 100%;
@@ -265,14 +265,6 @@ section {
     line-height: 1.3;
 }
 
-.text-left {
-    text-align: left;
-}
-
-.text-right {
-    text-align: right;
-}
-
 .trainer-bio h3 {
     font-size: 28px;
 }
@@ -286,6 +278,7 @@ section {
 .trainer-bio p {
     font-size: 17px;
 }
+/* Trainers End*/
 
 /* Reach Out Styles*/
 
@@ -295,20 +288,24 @@ section {
 
 .contact h2 {
     color: #fce138;
-    text-align: center;
-    border-color: #39a6b2;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-info > * {
+    flex: 1;
+    margin: 15px;
 }
 
 .contact-info iframe {
-    width: 400px;
     height: 400px;
 }
 
 .contact-info div {
-    width: 410px;
-    display: inline-block;
-    vertical-align: top;
-    margin: 30px 0 0 60px;
     color: white;
 }
 
@@ -320,14 +317,44 @@ section {
 .contact-info p, .contact-info address {
     margin: 20px 0;
     line-height: 1.5;
-    font-size: 20px;
+    font-size: 16px;
     font-style: normal;
+}
+
+.contact-info input, .contact-form textarea {
+    border: 1px solid #024e76;
+    display: block;
+    padding: 7px 15px;
+    font-size: 16px;
+    color: #024e76;
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+.contact-form button {
+    width: 100%;
+    border: none;
+    background: #fce138;
+    color: #024e76;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 16px;
 }
 
 .contact-info a{
     color:#fce138;
 }
+/* Reach Out End*/
 
+/*Utilities*/
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
 .flex-row {
     display: flex;
 }
